@@ -34,8 +34,8 @@ body {
   font-size: 6.2rem;
   background-image: linear-gradient(to right, #908143 0, #c0ac5a 22%, #f0d770 45%, #f3df8d 50%, #f0d770 55%, #c0ac5a 78%, #908143 100%);
   color: transparent;
-  background-clip: border-box;
   -webkit-background-clip: text;
+  background-clip: border-box;
 }
 .secondary-heading {
   font-size: 1.8rem;
@@ -242,9 +242,9 @@ hr:after {
   display: inline-block;
   padding: 5px 0;
   position: relative;
-  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: border-box;
   transition: all 0.3s ease-in-out;
 }
 .close-button:before {
