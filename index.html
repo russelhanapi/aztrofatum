@@ -3,7 +3,219 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://iili.io/HCMyvNj.md.png" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,400&family=Playfair+Display:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
     <title>aztroFatum - Your Dose of Daily Horoscopes</title>
   </head>
-  <body></body>
+  <body>
+    <div class="main-container">
+      <div class="headers-container">
+        <h1 class="primary-heading">aztroFatum</h1>
+        <p class="secondary-heading">
+          Your path is illuminated by a roadmap of stars...
+        </p>
+      </div>
+      <div class="zodiac-signs" id="zodiac-signs-grid">
+        <div class="zodiac-signs-grid">
+          <!-- ARIES -->
+          <div class="zodiac-sign-container">
+            <!-- https://iili.io/HCG1sHP.md.png -->
+            <img
+              src="https://raw.githubusercontent.com/russelhanapi/game-of-thrones-web-concept/9affecde915532e65f5f610e7d264c9244798161/images/house-sigils/arryn.svg"
+              alt="Aries sign"
+              class="zodiac-sign-img"
+              id="aries"
+              onclick="clicked('aries')"
+            />
+            <p class="zodiac-name">Aries</p>
+          </div>
+
+          <!-- TAURUS -->
+          <div class="zodiac-sign-container">
+            <img
+              src="https://iili.io/HCG5841.md.png"
+              alt="Taurus sign"
+              class="zodiac-sign-img"
+              id="taurus"
+              onclick="clicked('taurus')"
+            />
+            <p class="zodiac-name">Taurus</p>
+          </div>
+
+          <!-- GEMINI -->
+          <div class="zodiac-sign-container">
+            <img
+              src="https://iili.io/HCGXqKJ.md.png"
+              alt="Gemini sign"
+              class="zodiac-sign-img"
+              id="gemini"
+              onclick="clicked('gemini')"
+            />
+            <p class="zodiac-name">Gemini</p>
+          </div>
+
+          <!-- CANCER -->
+          <div class="zodiac-sign-container">
+            <img
+              src="https://iili.io/HCGhdJ4.md.png"
+              alt="Cancer sign"
+              class="zodiac-sign-img"
+              id="cancer"
+              onclick="clicked('cancer')"
+            />
+            <p class="zodiac-name">Cancer</p>
+          </div>
+
+          <!-- LEO -->
+          <div class="zodiac-sign-container">
+            <img
+              src="https://iili.io/HCGhEdv.md.png"
+              alt="Leo sign"
+              class="zodiac-sign-img"
+              id="leo"
+              onclick="clicked('leo')"
+            />
+
+            <p class="zodiac-name">Leo</p>
+          </div>
+
+          <!-- VIRGO -->
+          <div class="zodiac-sign-container">
+            <img
+              src="https://iili.io/HCGaPTb.md.png"
+              alt="Virgo sign"
+              class="zodiac-sign-img"
+              id="virgo"
+              onclick="clicked('virgo')"
+            />
+
+            <p class="zodiac-name">Virgo</p>
+          </div>
+
+          <!-- LIBRA -->
+          <div class="zodiac-sign-container">
+            <img
+              src="https://iili.io/HCGjV3b.md.png"
+              alt="Libra sign"
+              class="zodiac-sign-img"
+              id="libra"
+              onclick="clicked('libra')"
+            />
+            <p class="zodiac-name">Libra</p>
+          </div>
+
+          <!-- SCORPIO -->
+          <div class="zodiac-sign-container">
+            <img
+              src="https://iili.io/HCGwEDN.md.png"
+              alt="Scorpio sign"
+              class="zodiac-sign-img"
+              id="scorpio"
+              onclick="clicked('scorpio')"
+            />
+            <p class="zodiac-name">Scorpio</p>
+          </div>
+
+          <!-- SAGITTARIUS -->
+          <div class="zodiac-sign-container">
+            <img
+              src="https://iili.io/HCGwPUb.md.png"
+              alt="Sagittarius sign"
+              class="zodiac-sign-img"
+              id="sagittarius"
+              onclick="clicked('sagittarius')"
+            />
+            <p class="zodiac-name">Sagittarius</p>
+          </div>
+
+          <!-- CAPRICORN -->
+          <div class="zodiac-sign-container">
+            <img
+              src="https://iili.io/HCGNue4.md.png"
+              alt="Capricorn sign"
+              class="zodiac-sign-img"
+              id="capricorn"
+              onclick="clicked('capricorn')"
+            />
+            <p class="zodiac-name">Capricorn</p>
+          </div>
+
+          <!-- AQUARIUS -->
+          <div class="zodiac-sign-container">
+            <img
+              src="https://iili.io/HCGO9QS.md.png"
+              alt="Aquarius sign"
+              class="zodiac-sign-img"
+              id="aquarius"
+              onclick="clicked('aquarius')"
+            />
+            <p class="zodiac-name">Aquarius</p>
+          </div>
+
+          <!-- PISCES -->
+          <div class="zodiac-sign-container">
+            <img
+              src="https://iili.io/HCGOmcg.md.png"
+              alt="Pisces sign"
+              class="zodiac-sign-img"
+              id="pisces"
+              onclick="clicked('pisces')"
+            />
+            <p class="zodiac-name">Pisces</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="popup-card">
+      <div id="popup-card-inner">
+        <div class="loader-container">
+          <span>loading...</span>
+        </div>
+        <div class="popup-card-elements-container">
+          <div class="popup-card-reading-text">
+            <h3 class="popup-card-subheading">Daily Reading</h3>
+            <p
+              class="user-popup-card-daily-reading-text"
+              id="user-popup-card-daily-reading-text"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates iste in adipisci iusto amet error laboriosam sunt, est
+              aspernatur accusamus. Natus reprehenderit unde possimus soluta
+              ipsam, architecto consequatur ad modi.
+            </p>
+          </div>
+          <hr />
+          <div class="daily-predictions-grid">
+            <div class="daily-prediction-container">
+              <p class="dominant-mood-text">Dominant Mood:</p>
+              <p id="user-dominant-mood" class="user-daily-prediction">lorem</p>
+            </div>
+            <div class="daily-prediction-container">
+              <p class="lucky-color-text">Lucky Color:</p>
+              <p id="user-lucky-color" class="user-daily-prediction">lorem</p>
+            </div>
+            <div class="daily-prediction-container">
+              <p class="lucky-number-text">Lucky Number:</p>
+              <p id="user-lucky-number" class="user-daily-prediction">lorem</p>
+            </div>
+            <div class="daily-prediction-container">
+              <p class="lucky-time-text">Lucky Time:</p>
+              <p id="user-lucky-time" class="user-daily-prediction">lorem</p>
+            </div>
+          </div>
+          <a href="#" class="close-button" onclick="clicked()">Close</a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
