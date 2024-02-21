@@ -10,7 +10,7 @@ body {
   background-color: #282035;
   background-image: url(https://iili.io/HCM9LPI.md.png);
   background-size: contain;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1;
   font-weight: 400;
   overflow: hidden;
@@ -31,18 +31,9 @@ body {
   gap: 4rem;
 }
 .primary-heading {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 6.2rem;
-  background-image: linear-gradient(
-    to right,
-    #908143 0,
-    #c0ac5a 22%,
-    #f0d770 45%,
-    #f3df8d 50%,
-    #f0d770 55%,
-    #c0ac5a 78%,
-    #908143 100%
-  );
+  background-image: linear-gradient(to right, #908143 0, #c0ac5a 22%, #f0d770 45%, #f3df8d 50%, #f0d770 55%, #c0ac5a 78%, #908143 100%);
   color: transparent;
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -66,9 +57,12 @@ body {
 }
 .zodiac-sign-img {
   width: 15rem;
+  opacity: 0.6;
 }
+
 .zodiac-sign-img:hover {
   cursor: pointer;
+  opacity: 1;
   transform: scale(1.1);
   transition: all 0.3s;
 }
@@ -77,12 +71,13 @@ a {
   text-align: center;
 }
 .zodiac-name {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   color: #f0d770;
 }
 #zodiac-signs-grid.active {
   pointer-events: none;
+  -webkit-user-select: none;
   user-select: none;
   opacity: 0;
 }
@@ -105,7 +100,7 @@ a {
 }
 #popup-card:before,
 #popup-card:after {
-  content: "•";
+  content: '•';
   font-size: 1.4rem;
   text-align: center;
   line-height: 12px;
@@ -128,7 +123,7 @@ a {
 }
 #popup-card #popup-card-inner:before,
 #popup-card #popup-card-inner:after {
-  content: "•";
+  content: '•';
   font-size: 1.4rem;
   text-align: center;
   line-height: 12px;
@@ -187,7 +182,7 @@ a {
   letter-spacing: 4px;
 }
 .user-popup-card-daily-reading-text {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   line-height: 1.4;
   text-align: center;
   text-indent: 3rem;
@@ -206,7 +201,7 @@ hr {
   text-align: center;
 }
 hr:after {
-  content: "§";
+  content: '§';
   display: inline-block;
   position: relative;
   top: -0.7em;
@@ -242,12 +237,7 @@ hr:after {
   font-size: 1.5rem;
   font-weight: 700;
   align-self: center;
-  background-image: linear-gradient(
-    to right,
-    #f0d770,
-    #f0d770 50%,
-    #a8974e 50%
-  );
+  background-image: linear-gradient(to right, #f0d770, #f0d770 50%, #a8974e 50%);
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -259,7 +249,7 @@ hr:after {
   transition: all 0.3s ease-in-out;
 }
 .close-button:before {
-  content: "";
+  content: '';
   background: #f0d770;
   display: block;
   position: absolute;
